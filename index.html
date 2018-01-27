@@ -22,6 +22,10 @@ p {
 	margin-left: -1px;
 }
 
+ul {
+	margin-left: -10px;
+}
+
 img {
 	width: 100%;
 }
@@ -30,6 +34,7 @@ img {
 	float:left;
 	position:fixed;
 	max-width: 270px;
+    background-color:#fff;
 }
 
 .someLinks {
@@ -40,6 +45,9 @@ img {
 /* Projects */
 .projectDescription {
     text-align:justify;
+	
+	border-left:1px solid #e5e5e5;
+	padding:0 0 0 15px;
 }
 
 .project {
@@ -79,7 +87,8 @@ a:hover, a:focus {
 }
 
 .keywords {
-	margin-top: 10px;
+	margin-top: 15px;
+	color: #999999;
 }
 
 /*  SECTIONS  */
@@ -151,19 +160,22 @@ a:hover, a:focus {
 	
 	<div class="col span_2_of_2">
 		<div class="project">
-		  <img src="http://www.bundoonwhippets.com/images/macsig1.jpg" width="100%">
-		  <h2>Project 1</h2>
-		  <p class="projectDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat justo id scelerisque vestibulum. Quisque ornare, ligula nec iaculis consequat, risus dolor finibus dui, non ullamcorper mi quam sed augue. In nec enim venenatis, bibendum ligula in, blandit diam. Donec tempor lacus id mi mollis, quis bibendum ipsum imperdiet. </p>
-		  <ul>
-			  <li>1</li>
-			  <li>2</li>
-			  <li>3</li>
-			  <li>4</li>
-		  </ul>
-		  <p><a href="#">Website</p></a>    
-		  <p><a href="#">Github</p></a>
-		  <p><a href="#">Google Play Store</p></a>    
-		  <p class="keywords"><strong>Keywords: </strong>JavaScript, Node.js, Android, REST APIs, Cake, Dogs, Cats</p>
+			<img src="http://www.bundoonwhippets.com/images/macsig1.jpg" width="100%">
+			<h2>Project 1</h2>
+			<div class="projectDescription">
+			  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat justo id scelerisque vestibulum. Quisque ornare, ligula nec iaculis consequat, risus dolor finibus dui, non ullamcorper mi quam sed augue. In nec enim venenatis, bibendum ligula in, blandit diam. Donec tempor lacus id mi mollis, quis bibendum ipsum imperdiet.
+			  <ul>
+				  <li>1</li>
+				  <li>2</li>
+				  <li>3</li>
+				  <li>4</li>
+			  </ul>
+			  <p><a href="#">Website</p></a>    
+			  <p><a href="#">Repository</p></a>
+			  <p><a href="#">Google Play Store</p></a>    
+			  <!-- <p class="keywords"><strong>Keywords&nbsp;&nbsp;&nbsp;&nbsp; </strong>JavaScript, Node.js, Android, REST APIs, Cake, Dogs, Cats</p> -->
+			  <p class="keywords" color="#999999"><i>JavaScript, Node.js, Android, REST APIs, Cake, Dogs, Cats</i></p>
+			</div>
 		</div>
 
 		<div class="project">
@@ -176,7 +188,7 @@ a:hover, a:focus {
 			  <li>3</li>
 			  <li>4</li>
 		  </ul>
-		  <p><a href="#">Github</p></a>
+		  <p><a href="#">Repository</p></a>
 		  <p><a href="#">Google Play Store</p></a>
 		</div>
 
@@ -190,7 +202,7 @@ a:hover, a:focus {
 			  <li>3</li>
 			  <li>4</li>
 		  </ul>
-		  <p><a href="#">Github</p></a>
+		  <p><a href="#">Repository</p></a>
 		  <p><a href="#">Google Play Store</p></a>
 		</div>
 
@@ -204,7 +216,7 @@ a:hover, a:focus {
 			  <li>3</li>
 			  <li>4</li>
 		  </ul>
-		  <p><a href="#">Github</p></a>
+		  <p><a href="#">Repository</p></a>
 		  <p><a href="#">Google Play Store</p></a>
 		</div>
 	</div>

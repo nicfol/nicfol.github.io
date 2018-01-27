@@ -21,6 +21,15 @@ p {
     margin-bottom: 0.25em;
 }
 
+img {
+	width: 100%;
+}
+
+.infoText {
+	position:fixed;
+	width:36.2%;
+}
+
 .someLinks {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -113,10 +122,8 @@ a:hover, a:focus {
 @media only screen and (max-width: 480px) {
 	.span_2_of_2, .span_1_of_2, body { width: 100%; }
 	.section { margin: 5% }
-	}
-
-img {
-	width: 100%
+	.infoText { position:static; width:100%;}
+	img { width: 100%; }
 }
 
 </style>
@@ -128,20 +135,22 @@ img {
 
 <div class="section group">
 	<div class="col span_1_of_2">
-		<h1>Nicolai Foldager</h1>
-		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-		<div class="someLinks">
-			<p><a href="https://github.com/nicfol">Github</p></a>
-			<p><a href="https://www.linkedin.com/in/nicfol/">LinkedIn</p></a>
-			<p><a href="https://play.google.com/store/apps/developer?id=nicfol">Google Play</p></a>
-			<p><a href="mailto:nicolai.foldager@gmail.com">E-mail</p></a>
+		<div class="infoText">
+			<h1>Nicolai Foldager</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat justo id scelerisque vestibulum. Quisque ornare, ligula nec iaculis consequat, risus dolor finibus dui, non ullamcorper mi quam sed augue.</p>
+			<div class="someLinks">
+				<p><a href="https://github.com/nicfol">Github</p></a>
+				<p><a href="https://www.linkedin.com/in/nicfol/">LinkedIn</p></a>
+				<p><a href="https://play.google.com/store/apps/developer?id=nicfol">Google Play</p></a>
+				<p><a href="mailto:nicolai.foldager@gmail.com">E-mail</p></a>
+			</div>
 		</div>
 	</div>
 	
 	
 	<div class="col span_2_of_2">
 		<div class="project">
-		  <img src="http://www.bundoonwhippets.com/images/macsig1.jpg">
+		  <img src="http://www.bundoonwhippets.com/images/macsig1.jpg" width="100%">
 		  <h2>Project 1</h2>
 		  <p class="projectDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat justo id scelerisque vestibulum. Quisque ornare, ligula nec iaculis consequat, risus dolor finibus dui, non ullamcorper mi quam sed augue. In nec enim venenatis, bibendum ligula in, blandit diam. Donec tempor lacus id mi mollis, quis bibendum ipsum imperdiet. </p>
 		  <ul>
@@ -156,7 +165,7 @@ img {
 		</div>
 
 		<div class="project">
-		  <img src="http://www.bundoonwhippets.com/images/macsig1.jpg">
+		  <img src="http://www.bundoonwhippets.com/images/macsig1.jpg" width="100%">
 		  <h2>Project 2</h2>
 		  <p class="projectDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat justo id scelerisque vestibulum. Quisque ornare, ligula nec iaculis consequat, risus dolor finibus dui, non ullamcorper mi quam sed augue. In nec enim venenatis, bibendum ligula in, blandit diam. Donec tempor lacus id mi mollis, quis bibendum ipsum imperdiet. </p>
 		  <ul>

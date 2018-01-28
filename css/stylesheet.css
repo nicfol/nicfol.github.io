@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    width: 800px;
+    margin-top: 75px;
+    margin-left: 15%;
+    font: 13px/1.5 'Noto Sans', sans-serif;
+    color: #727272;
+}
+
+p {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+	margin-left: -1px;
+}
+
+ul {
+	margin-left: -10px;
+}
+
+img {
+	width: 100%;
+}
+
+.infoText {
+	float:left;
+	position:fixed;
+	max-width: 270px;
+    background-color:#fff;
+}
+
+.someLinks {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* Projects */
+.projectDescription {
+    text-align:justify;
+	border-left:1px solid #e5e5e5;
+	padding:3px 0 3px 15px;
+}
+
+.project {
+	width:100%;
+    margin-bottom: 35px;
+}
+
+.keywords {
+	margin-top: 15px;
+	margin-bottom:10px;
+	font-size: 12px;
+	color: #aaa;
+}
+
+/* Fonts */
+h1 {
+    color: #000;
+    font-size: 28px;
+    margin-top: -11px;
+	margin-left: -2px;
+}
+
+h2 {
+    color:#393939;
+    margin: 0px;
+	margin-left: -2px;
+	margin-bottom:-15px;
+	margin-top: -5px;
+}
+
+h5 {
+	float:left;
+    font-size: 13px;
+	margin-left: -1px;
+}
+
+/* URLs */
+a {
+  color:#267CB9;
+  text-decoration:none;
+}
+
+a:hover, a:focus {
+  color:#069;
+  font-weight: bold;
+}
+
+
+.icons {
+  color:#727272;
+  text-decoration:none;
+  margin: 0px 5px;
+}
+
+.icons:hover, .icons:focus {
+  color:#393939;
+  font-weight: bold;
+}
+
+
+/*  SECTIONS  */
+.section {
+    background-color:#fff;
+	clear: both;
+	padding: 0px;
+	margin: 2.5%;
+}
+
+/*  COLUMN SETUP  */
+.col {
+    background-color:#fff;
+	display: block;
+	float:left;
+	margin: 0% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 60%;
+}
+.span_1_of_2 {
+	width: 38.4%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2, body { width: 100%; }
+	body { margin-left: 0%; margin-top: 25px; }
+	.section { margin: 5%;}
+	.infoText { position:static; max-width:100%;}
+	img { width: 100%; }
+}

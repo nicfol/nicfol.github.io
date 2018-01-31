@@ -4,7 +4,7 @@ body {
     margin-top: 75px;
     margin-left: 15%;
     font: 13px/1.5 'Noto Sans', sans-serif;
-    color: #727272;
+    color: #4d4d4d;
 }
 
 * {
@@ -24,6 +24,7 @@ ul, ol {
 
 img {
 	width: 100%;
+	border:1px solid #e5e5e5;
 }
 
 .infoText {
@@ -34,7 +35,7 @@ img {
 }
 
 .someLinks {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 /* Projects */
@@ -96,6 +97,10 @@ a:hover, a:focus {
   margin: 0px 5px;
 }
 
+.smallIcon {
+	font-size:11px;
+}
+
 .icons:hover, .icons:focus {
   color:#393939;
   font-weight: bold;
@@ -146,4 +151,5 @@ a:hover, a:focus {
 	.section { margin: 5%;}
 	.infoText { position:static; max-width:100%;}
 	img { width: 100%; }
+	.span_1_of_2 { border-bottom:1px solid #e5e5e5; margin-bottom: 15px;}
 }

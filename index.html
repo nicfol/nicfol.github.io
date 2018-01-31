@@ -27,7 +27,11 @@
 	margin-right:5px;
 	margin-bottom:5px;
 	list-style: none;
-  transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.redacted {
+    background-color: #393939; 
 }
 
 </style>
@@ -42,7 +46,7 @@
 	<div class="col span_1_of_2">
 		<div class="infoText">
 			<h1>Nicolai Foldager</h1>
-			<p>Software engineering with a passion for anything Android, bikes or formula 1. Currently based in Copenhagen, Denmark while studying a Master of Engineering at Aalborg University Copenhagen.</p>
+			<p>Software engineer with a passion for anything Android, bikes or formula 1. Currently based in Copenhagen, Denmark while studying a Master of Engineering at Aalborg University Copenhagen.</p>
 			
 			<ul class="fa-ul factList">
 				<li>Daily transportation?</li>
@@ -66,20 +70,41 @@
 	<div class="col span_2_of_2">
 
 		<div class="project">
-			<h2>P9</h2>
+			<h2>Machine Learning Smart <span title="REDACTED" style="font-size: 18px; background-color:#393939;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h2>
 			<p class="keywords"><i>JavaScript, Node.js, Machine Learning, MongoDB, REST APIs, Data Analysis, Linux Web Server, Microsoft Azure</i></p>
 			
-			<img src="http://www.bundoonwhippets.com/images/macsig1.jpg" width="100%" alt="">
+			<!--<img src="./img/p4-logo.jpg" width="100%" alt="">-->
 			<div class="projectDescription">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat justo id scelerisque vestibulum. Quisque ornare, ligula nec iaculis consequat, risus dolor finibus dui, non ullamcorper mi quam sed augue. In nec enim venenatis, bibendum ligula in, blandit diam. Donec tempor lacus id mi mollis, quis bibendum ipsum imperdiet.
+			I had the opportunity to collaborate with <span class="redacted" title="REDACTED">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> in a semester project. 
+			By using Microsoft Azure Machine Learning Platform we created a prototype that expanded the feature set of their <span class="redacted" title="REDACTED">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>.
+			data extracted from the <span class="redacted" title="REDACTED">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a regression algorithm was used to predict <span class="redacted" title="REDACTED">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>. 
+			The system was built using a Node.js web server, a MongoDB and deployed to a Digital Ocean Linux Server. 
+			Unfortunately the project is under an NDA, so this is all I can share.
+			
 			<ul class="fa-ul">
 			  <li><i class="fa-li fa fa-tag" title="Project type"></i>Semester Project, Master's</li>
 			  <li><i class="fa-li fa fa-users" title="Team size"></i>3 Members</li>
 			  <li><i class="fa-li fa fa-cogs" title="Project status"></i>Prototype</li>
+			</div>
+		</div>
+		
+		<div class="project">
+			<h2>Education Recommender System</h2>
+			<p class="keywords"><i>JavaScript, Node.js, MongoDB, REST APIs, Natural Language Processing, Linux Web Server, Nginx, TLS/SSL</i></p>
+			
+			<!--<img src="./img/p4-logo.jpg" width="100%" alt="">-->
+			<div class="projectDescription">
+			A recommender system to aid Danish high-schoolers in choosing the right post-secondary education. It is developed using Node.js with a MongoDB database and deployed to a Digital Ocean Linux server using an Nginx web server.
+			The focus was on natural language understanding, a fast database design and efficient operations to calculate recommendations in real-time. My primary tasks were on algorithm design, server deployment and server security.
+			
+			<ul class="fa-ul">
+			  <li><i class="fa-li fa fa-tag" title="Project type"></i>Semester Project, Master's</li>
+			  <li><i class="fa-li fa fa-users" title="Team size"></i>4 Members</li>
+			  <li><i class="fa-li fa fa-cogs" title="Project status"></i>Prototype</li>
 			</ul>
 			<p>
-				<i class="fa fa-2x fa-github" title="Code Repository - Confidential" style="margin:0px 5px; color:#ddd;"></i>
-				<i class="fa fa-2x fa-book" title="Report - Confidential" style="margin:0px 5px; color:#ddd;"></i></a>
+				<a href="https://github.com/nicfol/Edu-RS" target="_blank" class="icons" title="Code Repository"><i class="fa fa-2x fa-github"></i></a>
+				<a href="./docs/p8.pdf" target="_blank" class="icons smallIcon" title="Report"><i class="fa fa-2x fa-book"></i></a>
 			</p>
 			</div>
 		</div>
@@ -88,9 +113,14 @@
 			<h2>Bachelor's Project - First Aid Application</h2>			
 			<p class="keywords"><i>C#, Unity Game Engine, Android, User Experience, User Engagement</i></p>
 			
-			<img src="http://www.bundoonwhippets.com/images/macsig1.jpg" width="100%" alt="">
+			<img src="./img/p6-logo.jpg" width="100%" alt="">
 			<div class="projectDescription">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat justo id scelerisque vestibulum. Quisque ornare, ligula nec iaculis consequat, risus dolor finibus dui, non ullamcorper mi quam sed augue. In nec enim venenatis, bibendum ligula in, blandit diam. Donec tempor lacus id mi mollis, quis bibendum ipsum imperdiet.
+			Two study the effect of game elements (achievements, visible progress, etc.) two Android applications were developed using Unity Game Engine. 
+			The two applications were identical except that one included game elements while the other didn't.
+			The primary focus was on user experience and data collection for the academic evaluation.
+			
+			The results of the evaluation was published at the Springer conference GOODTECHS 2016, where I presented the article in Venice, November 2016.
+			
 			<ul class="fa-ul">
 			  <li><i class="fa-li fa fa-tag" title="Project type"></i>Bachelor's Project</li>
 			  <li><i class="fa-li fa fa-users" title="Team size"></i>3 Members</li>
@@ -99,27 +129,8 @@
 			<p>
 				<a href="https://github.com/nicfol/Bachelors-Project" target="_blank" class="icons" title="Code Repository"><i class="fa fa-2x fa-github"></i></a>
 				<a href="#" target="_blank" class="icons" title="Release on Google Play Store"><i class="fa fa-2x fa-android"></i></a>
-				<a href="https://link.springer.com/chapter/10.1007/978-3-319-61949-1_9" target="_blank" class="icons" title="Article"><i class="fa fa-2x fa-file-text-o"></i></a>
-				<a href="./docs/p6.pdf" target="_blank" class="icons" title="Report"><i class="fa fa-2x fa-book"></i></a>
-			</p>
-			</div>
-		</div>
-		
-		<div class="project">
-			<h2>Study Buddy</h2>
-			<p class="keywords"><i>JavaScript, Node.js, MongoDB, REST APIs, Natural Language Processing, Linux Web Server, Nginx, TLS/SSL</i></p>
-			
-			<img src="http://www.bundoonwhippets.com/images/macsig1.jpg" width="100%" alt="">
-			<div class="projectDescription">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat justo id scelerisque vestibulum. Quisque ornare, ligula nec iaculis consequat, risus dolor finibus dui, non ullamcorper mi quam sed augue. In nec enim venenatis, bibendum ligula in, blandit diam. Donec tempor lacus id mi mollis, quis bibendum ipsum imperdiet.
-			<ul class="fa-ul">
-			  <li><i class="fa-li fa fa-tag" title="Project type"></i>Semester Project, Master's</li>
-			  <li><i class="fa-li fa fa-users" title="Team size"></i>4 Members</li>
-			  <li><i class="fa-li fa fa-cogs" title="Project status"></i>Prototype</li>
-			</ul>
-			<p>
-				<a href="https://github.com/nicfol/Edu-RS" target="_blank" class="icons" title="Code Repository"><i class="fa fa-2x fa-github"></i></a>
-				<a href="./docs/p8.pdf" target="_blank" class="icons" title="Report"><i class="fa fa-2x fa-book"></i></a>
+				<a href="https://link.springer.com/chapter/10.1007/978-3-319-61949-1_9" target="_blank" class="icons smallIcon" title="Article"><i class="fa fa-2x fa-file-text-o"></i></a>
+				<a href="./docs/p6.pdf" target="_blank" class="icons smallIcon" title="Report"><i class="fa fa-2x fa-book"></i></a>
 			</p>
 			</div>
 		</div>
@@ -128,9 +139,10 @@
 			<h2>Steady Pace - Running Application</h2>			
 			<p class="keywords"><i>Android, Java, GPS, User Location, Data Analysis, Pure Data, pd-core</i></p>
 			
-			<img src="http://www.bundoonwhippets.com/images/macsig1.jpg" width="100%" alt="">
+			<img src="./img/p4-logo.jpg" width="100%" alt="">
 			<div class="projectDescription">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat justo id scelerisque vestibulum. Quisque ornare, ligula nec iaculis consequat, risus dolor finibus dui, non ullamcorper mi quam sed augue. In nec enim venenatis, bibendum ligula in, blandit diam. Donec tempor lacus id mi mollis, quis bibendum ipsum imperdiet.
+			A native Android application designed to aid novice runners to avoid injuries by helping them control their pace through an audible feedback.
+			Focus was on efficiently utilizing the GPS in the user’s phone without draining the battery, collecting data and remotely extracting data from test participant's devices.
 			<ul class="fa-ul">
 			  <li><i class="fa-li fa fa-tag" title="Project type"></i>Semester Project, Bachelor's</li>
 			  <li><i class="fa-li fa fa-users" title="Team size"></i>Solo</li>
@@ -145,10 +157,11 @@
 		
 		<div class="project">
 			<h2>Infra - Multiplayer VR Game</h2>			
-			<p class="keywords"><i>Virtual Reality, Unity Game Engine, C#, Scrum </i></p>
+			<p class="keywords"><i>Virtual Reality, Unity Game Engine, C# </i></p>
 			
-			<img src="http://www.bundoonwhippets.com/images/macsig1.jpg" width="100%" alt="">
+			<img src="./img/p5-logo.jpg" width="100%" alt="">
 			<div class="projectDescription">
+			
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat justo id scelerisque vestibulum. Quisque ornare, ligula nec iaculis consequat, risus dolor finibus dui, non ullamcorper mi quam sed augue. In nec enim venenatis, bibendum ligula in, blandit diam. Donec tempor lacus id mi mollis, quis bibendum ipsum imperdiet.
 			<ul class="fa-ul">
 			  <li><i class="fa-li fa fa-tag" title="Project type"></i>Semester Project, Bachelor's</li>
@@ -157,7 +170,7 @@
 			</ul>
 			<p>
 				<a href="https://github.com/Jalict/MED5-PGP-P1" target="_blank" class="icons" title="Code Repository"><i class="fa fa-2x fa-github"></i></a>
-				<a href="./docs/p5.pdf" target="_blank" class="icons" title="Report"><i class="fa fa-2x fa-book"></i></a>
+				<a href="./docs/p5.pdf" target="_blank" class="icons" title="Report smallIcon"><i class="fa fa-2x fa-book"></i></a>
 			</p>
 			</div>
 		</div>
@@ -192,8 +205,8 @@
 				<a href="#" target="_blank" class="icons" title="Code Repository"><i class="fa fa-2x fa-github"></i></a>
 				<a href="#" target="_blank" class="icons" title="Release on Google Play Store"><i class="fa fa-2x fa-android"></i></a>
 				<a href="#" target="_blank" class="icons" title="Website"><i class="fa fa-2x fa-globe"></i></a>
-				<a href="#" target="_blank" class="icons" title="Article"><i class="fa fa-2x fa-file-text-o"></i></a>
-				<a href="#" target="_blank" class="icons" title="Report"><i class="fa fa-2x fa-book"></i></a>
+				<a href="#" target="_blank" class="icons smallIcon" title="Article"><i class="fa fa-2x fa-file-text-o"></i></a>
+				<a href="#" target="_blank" class="icons smallIcon" title="Report"><i class="fa fa-2x fa-book"></i></a>
 			</p>
 			</div>
 		</div>

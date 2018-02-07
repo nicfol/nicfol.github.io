@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html xml:lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#393939"/>
-
-<meta name="description" content="Personal landing page for Nicolai Foldager">
-<meta name="author" content="Nicolai Foldager">
-
-<title>Nicolai Foldager</title>
-<link rel="icon" type="image/ico" href="fa.ico">
-
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-
-<link rel="stylesheet" href="./css/stylesheet.css">
-<link rel="stylesheet" href="./css/font-awesome.min.css">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#393939"/>
+	
+	<meta name="description" content="Personal landing page for Nicolai Foldager">
+	<meta name="author" content="Nicolai Foldager">
+	<meta name="keywords" content="Nicolai Foldager, Nikolai Foldager, Nicolaj Foldager, Nikolaj Foldager, Foldager, nicfol.com, nicfol.dk, nicolaifoldager.dk, nicolaifoldager.com" />
+	<meta name="robots" content="index, noimageindex, nofollow">
+	
+	<title>Nicolai Foldager - Personal Landing Page</title>
+	<link rel="icon" type="image/ico" href="fa.ico">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="./css/stylesheet.css">
+	<link rel="stylesheet" href="./css/font-awesome.min.css">
 <style>
-
 .factList {
 	margin-left:-1px;
 	list-style: none;
 }
-
 .answer {
 	margin-left:5px;
 	margin-right:5px;
@@ -29,46 +26,38 @@
 	list-style: none;
     transform: rotate(90deg);
 }
-
 .redacted {
     background-color: #393939; 
 }
-
 </style>
-
 </head>
-
-
-
 <body>
-
+<div itemscope itemtype="http://schema.org/Person">
 <div class="section group">
 	<div class="col span_1_of_2">
 		<div class="infoText">
-			<h1>Nicolai Foldager</h1>
-			<p>Software engineer with a passion for anything Android, bikes or Formula 1. Currently based in Copenhagen, Denmark while studying a Master of Engineering at Aalborg University Copenhagen.</p>
+			<h1><span itemprop="givenName">Nicolai Foldager</span></h1>
+			<p>Software engineer with a passion for anything Android, bikes or Formula 1. Currently based in <span itemprop="homeLocation">Copenhagen, Denmark</span> while studying a Master of Engineering at <span itemprop="alumniOf">Aalborg University Copenhagen.</span></p>
 			
 			<ul class="fa-ul factList">
 				<li>Daily transportation?</li>
-				<li><i class="fa fa-level-up answer" aria-hidden="true"></i><i>Specialized Allez 2016</i></li>
+				<li><i class="fa fa-level-up answer" aria-hidden="true"></i><i>Specialized Allez E5 2016</i></li>
 				<li></i>Linux distribution of choice?</li>
 				<li><i class="fa fa-level-up answer" aria-hidden="true"></i><i>Ubuntu Gnome 16.04</i></li>
 				<li></i>Favorite color of shoes?</li>
 				<li><i class="fa fa-level-up answer" aria-hidden="true"></i><span style="color:#e53935;font-style:italic;">Red</span></li>
 			</ul>
-
 			<div class="someLinks">
-				<p><a href="https://github.com/nicfol" title="Link to my Github profile">Github</p></a>
-				<p><a href="https://www.linkedin.com/in/nicfol/" title="Link to my LinkedIn profile">LinkedIn</p></a>
-				<p><a href="https://play.google.com/store/apps/developer?id=nicfol" title="Link to my Google Play Developers profile">Google Play</p></a>
-				<p><a href="mailto:nicolai.foldager@gmail.com" title="Email me!">E-mail</p></a>
+				<p><a href="https://github.com/nicfol" title="Link to my Github profile" itemprop="sameAs">Github</p></a>
+				<p><a href="https://www.linkedin.com/in/nicfol/" title="Link to my LinkedIn profile" itemprop="sameAs">LinkedIn</p></a>
+				<p><a href="https://play.google.com/store/apps/developer?id=nicfol" title="Link to my Google Play Developers profile" itemprop="sameAs">Google Play</p></a>
+				<p><a href="mailto:nicolai.foldager@gmail.com" title="Email me!" itemprop="email">E-mail</p></a>
 			</div>
 		</div>
 	</div>
 	
 	
 	<div class="col span_2_of_2">
-
 		<div class="project">
 			<h2>Machine Learning Smart <span title="REDACTED" style="font-size: 18px; background-color:#393939;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h2>
 			<p class="keywords"><i>JavaScript, Node.js, Machine Learning, MongoDB, REST APIs, Data Analysis, Linux Web Server, Microsoft Azure</i></p>
@@ -140,7 +129,7 @@
 			<h2>Steady Pace - Running Application</h2>			
 			<p class="keywords"><i>Android, Java, GPS, User Location, Data Analysis, Pure Data, pd-core</i></p>
 			
-			<img src="./img/p4-logo.jpg" width="100%" title="Running Application">
+			<img src="./img/p4-logo.jpg" width="100%" alt="Running application for Android using Pure Data developed by Nicolai Foldager">
 			<div class="projectDescription">
 			A native Android application designed to aid novice runners to avoid injuries by helping them control their pace through an audible feedback.
 			Focus was on efficiently utilizing the GPS in the user’s phone without draining the battery, collecting data and remotely extracting data from test participant's devices.
@@ -160,7 +149,7 @@
 			<h2>Infra - Multiplayer VR Game</h2>			
 			<p class="keywords"><i>Virtual Reality, Unity Game Engine, C# </i></p>
 			
-			<img src="./img/p5-logo.jpg" width="100%" title="Infra - Multiplayer VR Game">
+			<img src="./img/p5-logo.jpg" width="100%" alt="Infra - Multiplayer Virtual Reality Game>
 			<div class="projectDescription">
 			A three player VR puzzle game, each player controls a colored light with their head movement. The players have to combine the colors of their lights to complete the puzzles and progress in the game.
 			The game was developed in C# in Unity Game Engine.
@@ -179,14 +168,10 @@
 		
 	</div>
 </div>
-
+</div>
 </body>
 </html>
-
-
-
 <!--- http://fontawesome.io/icons/ Når du engang glemmer, hvor icons er fra
-
 		<div class="project">
 			<h2>Project 1</h2>			
 			<p class="keywords"><i>JavaScript, Node.js, Android, REST APIs, Cake, Dogs, Cats</i></p>
@@ -209,7 +194,4 @@
 			</p>
 			</div>
 		</div>
-
 -->
-
-

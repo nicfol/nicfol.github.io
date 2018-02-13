@@ -4,16 +4,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#393939"/>
 	
-	<meta name="description" content="Personal landing page for Nicolai Foldager">
+	<meta name="description" content="Personal landing page for Nicolai Foldager. Here I showcase some of the software development projects I've worked on the past.">
 	<meta name="author" content="Nicolai Foldager">
-	<meta name="keywords" content="Nicolai Foldager, Nikolai Foldager, Nicolaj Foldager, Nikolaj Foldager, Foldager, nicfol.com, nicfol.dk, nicolaifoldager.dk, nicolaifoldager.com" />
-	<meta name="robots" content="index, noimageindex, nofollow">
+	<meta name="keywords" content="Nicolai Foldager, Nikolai Foldager, Nicolaj Foldager, Nikolaj Foldager, Foldager, nicfol.com, nicfol.dk, nicolaifoldager.dk, nicolaifoldager.com, nicfol" />
+	<meta name="robots" content="index, noimageindex">
 	
-	<title>Nicolai Foldager - Personal Landing Page</title>
+	<link rel="alternate" hreflang="en" href="https://www.nicfol.com" />
+	
+	<title>Nicolai Foldager - Personal Landing Page For Nicolai Foldager</title>
 	<link rel="icon" type="image/ico" href="fa.ico">
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="./css/stylesheet.css">
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
 	<link rel="stylesheet" href="./css/font-awesome.min.css">
+	
 <style>
 .factList {
 	margin-left:-1px;
@@ -29,29 +32,189 @@
 .redacted {
     background-color: #393939; 
 }
+
+body {
+    margin: 0;
+    width: 800px;
+    margin-top: 75px;
+    margin-left: 15%;
+    font: 13px/1.5 'Noto Sans', sans-serif;
+    color: #4d4d4d;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+	margin-left: -1px;
+}
+
+ul, ol {
+	margin-left: -10px;
+}
+
+img {
+	width: 100%;
+	border:1px solid #e5e5e5;
+}
+
+.infoText {
+	float:left;
+	position:fixed;
+	max-width: 270px;
+    background-color:#fff;
+}
+
+.someLinks {
+    margin-bottom: 15px;
+}
+
+/* Projects */
+.projectDescription {
+    text-align:justify;
+	border-left:1px solid #e5e5e5;
+	padding:3px 0 3px 15px;
+}
+
+.project {
+	width:100%;
+    margin-bottom: 35px;
+}
+
+.keywords {
+	margin-top: 15px;
+	margin-bottom:10px;
+	font-size: 12px;
+	color: #aaa;
+}
+
+/* Fonts */
+h1 {
+    color: #000;
+    font-size: 28px;
+    margin-top: -11px;
+	margin-left: -2px;
+}
+
+h2 {
+    color:#393939;
+    margin: 0px;
+	margin-left: -2px;
+	margin-bottom:-15px;
+	margin-top: -7px;
+}
+
+h5 {
+	float:left;
+    font-size: 13px;
+	margin-left: -1px;
+}
+
+/* URLs */
+a {
+  color:#267CB9;
+  text-decoration:none;
+}
+
+a:hover, a:focus {
+  color:#069;
+  font-weight: bold;
+}
+
+
+.icons {
+  color:#727272;
+  text-decoration:none;
+  margin: 0px 5px;
+}
+
+.smallIcon {
+	font-size:11px;
+}
+
+.icons:hover, .icons:focus {
+  color:#393939;
+  font-weight: bold;
+}
+
+
+/*  SECTIONS  */
+.section {
+    background-color:#fff;
+	clear: both;
+	padding: 0px;
+	margin: 2.5%;
+}
+
+/*  COLUMN SETUP  */
+.col {
+    background-color:#fff;
+	display: block;
+	float:left;
+	margin: 0% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 60%;
+}
+.span_1_of_2 {
+	width: 38.4%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2, body { width: 100%; }
+	body { margin-left: 0%; margin-top: 25px; }
+	.section { margin: 5%;}
+	.infoText { position:static; max-width:100%;}
+	img { width: 100%; }
+	.span_1_of_2 { border-bottom:1px solid #e5e5e5; margin-bottom: 15px;}
+}
+
 </style>
 </head>
+
+
 <body>
-<div itemscope itemtype="http://schema.org/Person">
 <div class="section group">
 	<div class="col span_1_of_2">
 		<div class="infoText">
-			<h1><span itemprop="givenName">Nicolai Foldager</span></h1>
-			<p>Software engineer with a passion for anything Android, bikes or Formula 1. Currently based in <span itemprop="homeLocation">Copenhagen, Denmark</span> while studying a Master of Engineering at <span itemprop="alumniOf">Aalborg University Copenhagen.</span></p>
-			
-			<ul class="fa-ul factList">
-				<li>Daily transportation?</li>
-				<li><i class="fa fa-level-up answer" aria-hidden="true"></i><i>Specialized Allez E5 2016</i></li>
-				<li></i>Linux distribution of choice?</li>
-				<li><i class="fa fa-level-up answer" aria-hidden="true"></i><i>Ubuntu Gnome 16.04</i></li>
-				<li></i>Favorite color of shoes?</li>
-				<li><i class="fa fa-level-up answer" aria-hidden="true"></i><span style="color:#e53935;font-style:italic;">Red</span></li>
-			</ul>
-			<div class="someLinks">
-				<p><a href="https://github.com/nicfol" title="Link to my Github profile" itemprop="sameAs">Github</p></a>
-				<p><a href="https://www.linkedin.com/in/nicfol/" title="Link to my LinkedIn profile" itemprop="sameAs">LinkedIn</p></a>
-				<p><a href="https://play.google.com/store/apps/developer?id=nicfol" title="Link to my Google Play Developers profile" itemprop="sameAs">Google Play</p></a>
-				<p><a href="mailto:nicolai.foldager@gmail.com" title="Email me!" itemprop="email">E-mail</p></a>
+			<div itemscope itemtype="http://schema.org/Person">
+				<h1><span itemprop="givenName">Nicolai Foldager</span></h1>
+				<p>Software engineer with a passion for anything Android, bikes or Formula 1. Currently based in <span itemprop="homeLocation">Copenhagen, Denmark</span> while studying a Master of Engineering at <span itemprop="alumniOf">Aalborg University Copenhagen.</span></p>
+				
+				<ul class="fa-ul factList">
+					<li>Daily transportation?</li>
+					<li><i class="fa fa-level-up answer" aria-hidden="true"></i><i>Specialized Allez E5 2016</i></li>
+					<li></i>Linux distribution of choice?</li>
+					<li><i class="fa fa-level-up answer" aria-hidden="true"></i><i>Ubuntu Gnome 16.04</i></li>
+					<li></i>Favorite color of shoes?</li>
+					<li><i class="fa fa-level-up answer" aria-hidden="true"></i><span style="color:#e53935;font-style:italic;">Red</span></li>
+				</ul>
+				<div class="someLinks">
+					<p><a href="https://github.com/nicfol" title="Link to my Github profile" itemprop="sameAs">Github</p></a>
+					<p><a href="https://www.linkedin.com/in/nicfol/" title="Link to my LinkedIn profile" itemprop="sameAs">LinkedIn</p></a>
+					<p><a href="https://play.google.com/store/apps/developer?id=nicfol" title="Link to my Google Play Developers profile" itemprop="sameAs">Google Play</p></a>
+					<p><a href="mailto:nicolai.foldager@gmail.com" title="Email me!" itemprop="email">E-mail</p></a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -60,7 +223,7 @@
 	<div class="col span_2_of_2">
 		<div class="project">
 			<h2>Machine Learning Smart <span title="REDACTED" style="font-size: 18px; background-color:#393939;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h2>
-			<p class="keywords"><i>JavaScript, Node.js, Machine Learning, MongoDB, REST APIs, Data Analysis, Linux Web Server, Microsoft Azure</i></p>
+			<p class="keywords"><i>JavaScript, Node.js, Machine Learning, MongoDB, REST APIs, Data Analysis, Linux Web Server, Microsoft Azure, Cloud Computing</i></p>
 			
 			<!--<img src="./img/p4-logo.jpg" width="100%" alt="">-->
 			<div class="projectDescription">
@@ -80,7 +243,7 @@
 		
 		<div class="project">
 			<h2>Education Recommender System</h2>
-			<p class="keywords"><i>JavaScript, Node.js, MongoDB, REST APIs, Natural Language Processing, Linux Web Server, Nginx, TLS/SSL</i></p>
+			<p class="keywords"><i>JavaScript, Node.js, MongoDB, REST APIs, Natural Language Processing, Linux Server, Nginx, TLS/SSL, Cloud Computing</i></p>
 			
 			<!--<img src="./img/p4-logo.jpg" width="100%" alt="">-->
 			<div class="projectDescription">
@@ -103,7 +266,7 @@
 			<h2>Bachelor's Project - First Aid Application</h2>			
 			<p class="keywords"><i>C#, Unity Game Engine, Android, User Experience, User Engagement</i></p>
 			
-			<img src="./img/p6-logo.jpg" width="100%" title="Bachelor's Project - First Aid Application">
+			<img src="./img/p6-logo.jpg" width="100%" title="Bachelor's Project - First Aid Application" alt="Nicolai Foldager bachelors project. An Android application to help users learn first aid.">
 			<div class="projectDescription">
 			Two study the effect of game elements (achievements, visible progress, etc.) two Android applications were developed using Unity Game Engine. 
 			The two applications were identical except that one included game elements while the other didn't.
@@ -141,18 +304,18 @@
 			</ul>
 			<p>
 				<a href="https://github.com/nicfol/SteadyPace" target="_blank" class="icons" title="Code Repository"><i class="fa fa-2x fa-github"></i></a>
-				<a href="https://play.google.com/store/apps/details?id=com.nicolaifoldager.p4_prototype" target="_blank" target="_blank" class="icons" title="Release on Google Play Store"><i class="fa fa-2x fa-android"></i></a>
+				<a href="https://play.google.com/store/apps/details?id=com.nicolaifoldager.p4_prototype" target="_blank" class="icons" title="Release on Google Play Store"><i class="fa fa-2x fa-android"></i></a>
 			</p>
 			</div>
 		</div>
 		
 		<div class="project">
-			<h2>Infra - Multiplayer VR Game</h2>			
-			<p class="keywords"><i>Virtual Reality, Unity Game Engine, C# </i></p>
+			<h2>Infra - Multiplayer Virtual Reality Game</h2>			
+			<p class="keywords"><i>Virtual Reality, Unity Game Engine, C#</i></p>
 			
-			<img src="./img/p5-logo.jpg" width="100%" alt="Infra - Multiplayer Virtual Reality Game>
+			<img src="./img/p5-logo.jpg" width="100%" title="Logo for the Infra project" alt="Infra - Multiplayer virtual reality game Nicolai Foldager worked on">
 			<div class="projectDescription">
-			A three player VR puzzle game, each player controls a colored light with their head movement. The players have to combine the colors of their lights to complete the puzzles and progress in the game.
+			A three player virtual reality puzzle game, each player controls a colored light with their head movement. The players have to combine the colors of their lights to complete the puzzles and progress in the game.
 			The game was developed in C# in Unity Game Engine.
 			<ul class="fa-ul">
 			  <li><i class="fa-li fa fa-tag" title="Project type"></i>Semester Project, Bachelor's</li>
@@ -161,14 +324,13 @@
 			</ul>
 			<p>
 				<a href="https://github.com/Jalict/MED5-PGP-P1" target="_blank" class="icons" title="Code Repository"><i class="fa fa-2x fa-github"></i></a>
-				<a href="./docs/p5.pdf" target="_blank" class="icons" title="Report smallIcon"><i class="fa fa-2x fa-book"></i></a>
+				<a href="./docs/p5.pdf" target="_blank" class="icons" title="Report"><i class="fa fa-2x fa-book"></i></a>
 			</p>
 			</div>
 		</div>
 		
 		
 	</div>
-</div>
 </div>
 </body>
 </html>

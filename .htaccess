@@ -90,3 +90,8 @@ RewriteRule ^(.*)$ https://www.nicfol.com/$1 [R,L]
     </IfModule>
 
 </IfModule>
+
+<IfModule mod_expires.c>
+        ExpiresActive On
+        ExpiresDefault "access plus 30 days"
+</IfModule>
